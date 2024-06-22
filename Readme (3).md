@@ -1,7 +1,7 @@
 
 # Deploying a Contract on Fuel Network 
 
-##Install Dependencies  ---- 
+## Install Dependencies  ---- 
 
 ```
 sudo apt update
@@ -9,7 +9,7 @@ sudo apt upgrade -y
 sudo apt-get install curl screen -y 
 ```
 
-## Installing RUST 
+## Install RUST 
 
 ```
 curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
