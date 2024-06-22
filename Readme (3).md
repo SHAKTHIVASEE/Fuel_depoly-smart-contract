@@ -151,7 +151,7 @@ forc deploy --testnet
 
 ### Check you transaction in fuel wallet transaction  history...
 
-# For upcoming project Follow in github..
+For upcoming project Follow in github..
 
 
 
