@@ -1,7 +1,7 @@
 
 # Deploying a Contract on Fuel Network 
 
-## Install Dependencies  ---- 
+## Install Dependencies 
 
 ```
 sudo apt update
@@ -35,20 +35,20 @@ sudo apt install git -y
 curl https://install.fuel.network | sh
 ```
 
-### press ```y``` then enter
- ![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/66a2c343-00ba-41ec-a08f-006866b1a0db)
-
-
+### press y then enter
 
  ### Setting PATH 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/1581ad4f-f1cb-4303-a037-b9579e6f087d)
 
+```
+PATH="${HOME}/.fuelup/bin:${PATH}"
+```
 ```
 source /root/.bashrc
 ```
-
-
-### Setting ```FUELUP```
+```
+sudo su
+```
+### Setting FUELUP
 
 ```
 fuelup toolchain install latest
@@ -56,28 +56,19 @@ fuelup self update
 fuelup update && fuelup default latest
 ```
 
-
-
-
 ## Creating PROJECT 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/af5b6c9c-f515-499a-a700-5f44e387833b)
 
 ```
 mkdir fuel-project && cd fuel-project
 forc new counter-contract
 ```
-
-
-
 ### Editing Contract 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/cba9e0b7-ecdf-401c-80ad-80c6f746c543)
-
 
 ```
 nano counter-contract/src/main.sw
 ```
 
-Clear/delete everything and paste below ```code```
+Clear/delete everything and paste below code
 
 ```
 contract;
@@ -117,38 +108,23 @@ impl Counter for Contract {
 
 
 ## Build Contract 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/af8b7100-fa86-4177-9907-2575cd9abbf8)
-
 ```
 cd counter-contract
 forc build 
 ```
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/777ae627-7101-4ec0-8f3c-804f2c5c5e7d)
-
-
-
-
-
 
 ## Deploying Contract 
-Remember, you will need your FUEL wallet here, i will be importing mine, if you don't have wallet, [Install from here](https://wallet.fuel.network/docs/install/)
-
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/3d2e1430-d731-45c5-a74d-a391cc0bf60e)
 
 
 
 ### Importing wallet 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/468fac6b-3b48-4723-980a-606ae58b5427)
-
-
 ```
 forc wallet import 
 ```
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/bb4f2b0d-533a-400c-9b09-8dba98bf8a72)
 
 
 ### and copy and paste on terminal
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/5841f34b-2476-4116-9e00-cebdecad08fb)
+
 
 ### Note:  ``` password are always invincible```
 
@@ -160,7 +136,6 @@ forc wallet import
 ```
 forc wallet account new
 ```
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/33913d6b-2030-4c5f-896d-79e3ee6b32f8)
 
 ### Import account and input password 
 
@@ -176,14 +151,13 @@ forc wallet accounts
 ---------
 
 ### Deploy Contract 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/8e5842f2-5b77-4c07-ac19-7ca689384ec6)
 
 ```
 forc deploy --testnet 
 ```
 
-### Enter ```0``` as Index and click ```y``` 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/f30a2bdc-365a-475f-a180-d41776a7f0ae)
+### Enter 0 as Index and click y
+
 
 # CONTRACT DEPLOYED 
 ----------
@@ -192,7 +166,7 @@ forc deploy --testnet
 # EXPLORER 
 [FUEL EXPLORER](https://app.fuel.network/) 
 
--------------
+### For upcoming project Follow & Give Star
 
 
 
