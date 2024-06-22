@@ -29,15 +29,15 @@ sudo apt install git -y
 ```
 
 
-## Install Fuel Toolchain 
+## Install Fuel-Toolchain 
 
 ```
 curl https://install.fuel.network | sh
 ```
 
-### press y then enter
+### Press y then enter
 
- ### Setting PATH 
+### Setting PATH 
 
 ```
 PATH="${HOME}/.fuelup/bin:${PATH}"
@@ -56,7 +56,7 @@ fuelup self update
 fuelup update && fuelup default latest
 ```
 
-## Creating PROJECT 
+## Creating Project 
 
 ```
 mkdir fuel-project && cd fuel-project
@@ -100,12 +100,9 @@ impl Counter for Contract {
 ```
 
 
-### Save and exit with  ```Ctrl X + y ```  and click ``` ENTER ``` 
+### Save and exit with Ctrl X then y   and click  ENTER 
 
 --------------------------------------
-
-
-
 
 ## Build Contract 
 ```
@@ -117,18 +114,12 @@ forc build
 
 
 
-### Importing wallet 
+### Importing wallet Phrase key from fuel wallet
 ```
 forc wallet import 
 ```
 
-
-### and copy and paste on terminal
-
-
-### Note:  ``` password are always invincible```
-
-----------------
+### Note - password are always not shown
 
 
 ### Create Account 
@@ -146,8 +137,6 @@ forc wallet account new
 ```
 forc wallet accounts
 ```
-
-
 ---------
 
 ### Deploy Contract 
@@ -158,15 +147,11 @@ forc deploy --testnet
 
 ### Enter 0 as Index and click y
 
+### Now your CONTRACT as been DEPLOYED 
 
-# CONTRACT DEPLOYED 
-----------
+### Check you transaction in fuel wallet transaction  history...
 
-
-# EXPLORER 
-[FUEL EXPLORER](https://app.fuel.network/) 
-
-### For upcoming project Follow & Give Star
+# For upcoming project Follow in github..
 
 
 
