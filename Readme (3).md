@@ -1,12 +1,5 @@
 
-
---------------------------------
-
-
 # Deploying a Contract on Fuel Network 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/79098f5b-4d5c-48a5-9eda-8b39b1cccde6)
-
-
 
 ##Install Dependencies  ---- 
 
@@ -15,8 +8,6 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt-get install curl screen -y 
 ```
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/f9fb26d5-3d76-4349-855a-3fba14179514)
-
 
 ## Installing RUST 
 
@@ -25,28 +16,20 @@ curl --proto '=https' --tlsv1.3 https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 rustc --version
 ```
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/5aecb6a0-996e-428f-b827-2070678725aa)
 
 ```
 rustup install stable
 rustup update stable
 rustup default stable
 ```
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/f78242c5-aac1-4513-af97-08c48dc79d5a)
-
-
 
 ## Install GIT 
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/c271feba-3c9a-43dd-903f-6a68ad3d69e8)
-
 ```
 sudo apt install git -y 
 ```
 
 
 ## Install Fuel Toolchain 
-
-![image](https://github.com/mztacat/Fuel-Contract-Deployment/assets/31314340/a83a1f30-0333-4414-b6f4-c6f79793ac78)
 
 ```
 curl https://install.fuel.network | sh
